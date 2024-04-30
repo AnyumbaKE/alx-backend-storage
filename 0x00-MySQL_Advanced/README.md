@@ -3,9 +3,18 @@ Back-end
 SQL
 MySQL
  Weight: 1
- Project will start Apr 24, 2024 6:00 AM, must end by Apr 26, 2024 6:00 AM
- Checker was released at Apr 24, 2024 6:00 PM
+ Project over - took place from Apr 24, 2024 6:00 AM to Apr 26, 2024 6:00 AM
  An auto review will be launched at the deadline
+In a nutshell…
+Auto QA review: 53.0/53 mandatory & 8.0/8 optional
+Altogether:  200.0%
+Mandatory: 100.0%
+Optional: 100.0%
+Calculation:  100.0% + (100.0% * 100.0%)  == 200.0%
+Concepts
+For this project, we expect you to look at this concept:
+
+Advanced SQL
 Resources
 Read or watch:
 
@@ -83,6 +92,7 @@ $
 Tasks
 0. We are all unique!
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a SQL script that creates a table users following these requirements:
 
 With these attributes:
@@ -119,9 +129,10 @@ Repo:
 GitHub repository: alx-backend-storage
 Directory: 0x00-MySQL_Advanced
 File: 0-uniq_users.sql
-  
+   
 1. In and not out
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a SQL script that creates a table users following these requirements:
 
 With these attributes:
@@ -161,9 +172,10 @@ Repo:
 GitHub repository: alx-backend-storage
 Directory: 0x00-MySQL_Advanced
 File: 1-country_users.sql
-  
+   
 2. Best band ever!
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a SQL script that ranks country origins of bands, ordered by the number of (non-unique) fans
 
 Requirements:
@@ -194,9 +206,10 @@ Repo:
 GitHub repository: alx-backend-storage
 Directory: 0x00-MySQL_Advanced
 File: 2-fans.sql
-  
+   
 3. Old school band
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a SQL script that lists all bands with Glam rock as their main style, ranked by their longevity
 
 Requirements:
@@ -224,9 +237,10 @@ Repo:
 GitHub repository: alx-backend-storage
 Directory: 0x00-MySQL_Advanced
 File: 3-glam_rock.sql
-  
+   
 4. Buy buy buy
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a SQL script that creates a trigger that decreases the quantity of an item after adding a new order.
 
 Quantity in the table items can be negative.
@@ -295,9 +309,10 @@ Repo:
 GitHub repository: alx-backend-storage
 Directory: 0x00-MySQL_Advanced
 File: 4-store.sql
-  
+   
 5. Email validation to sent
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a SQL script that creates a trigger that resets the attribute valid_email only when the email has been changed.
 
 Context: Nothing related to MySQL, but perfect for user email validation - distribute the logic to the database itself!
@@ -367,9 +382,10 @@ Repo:
 GitHub repository: alx-backend-storage
 Directory: 0x00-MySQL_Advanced
 File: 5-valid_email.sql
-  
+   
 6. Add bonus
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a SQL script that creates a stored procedure AddBonus that adds a new correction for a student.
 
 Requirements:
@@ -490,9 +506,10 @@ Repo:
 GitHub repository: alx-backend-storage
 Directory: 0x00-MySQL_Advanced
 File: 6-bonus.sql
-  
+   
 7. Average score
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a SQL script that creates a stored procedure ComputeAverageScoreForUser that computes and store the average score for a student. Note: An average score can be a decimal
 
 Requirements:
@@ -589,9 +606,10 @@ Repo:
 GitHub repository: alx-backend-storage
 Directory: 0x00-MySQL_Advanced
 File: 7-average_score.sql
-  
+   
 8. Optimize simple search
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a SQL script that creates an index idx_name_first on the table names and the first letter of name.
 
 Requirements:
@@ -645,9 +663,10 @@ Repo:
 GitHub repository: alx-backend-storage
 Directory: 0x00-MySQL_Advanced
 File: 8-index_my_names.sql
-  
+   
 9. Optimize search and score
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a SQL script that creates an index idx_name_first_score on the table names and the first letter of name and the score.
 
 Requirements:
@@ -700,9 +719,10 @@ Repo:
 GitHub repository: alx-backend-storage
 Directory: 0x00-MySQL_Advanced
 File: 9-index_name_score.sql
-  
+   
 10. Safe divide
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a SQL script that creates a function SafeDiv that divides (and returns) the first by the second number or returns 0 if the second number is equal to 0.
 
 Requirements:
@@ -759,9 +779,10 @@ Repo:
 GitHub repository: alx-backend-storage
 Directory: 0x00-MySQL_Advanced
 File: 10-div.sql
-  
+   
 11. No table for a meeting
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a SQL script that creates a view need_meeting that lists all students that have a score under 80 (strict) and no last_meeting or more than 1 month.
 
 Requirements:
@@ -864,9 +885,10 @@ Repo:
 GitHub repository: alx-backend-storage
 Directory: 0x00-MySQL_Advanced
 File: 11-need_meeting.sql
-  
+   
 12. Average weighted score
 #advanced
+Score: 100.0% (Checks completed: 100.0%)
 Write a SQL script that creates a stored procedure ComputeAverageWeightedScoreForUser that computes and store the average weighted score for a student.
 
 Requirements:
@@ -965,20 +987,23 @@ id  name    average_score
 bob@dylan:~$ 
 Repo:
 
-GitHub repository: alx-backend-storage
-Directory: 0x00-MySQL_Advanced
-File: 100-average_weighted_score.sql
-  
-13. Average weighted score for all!
-#advanced
+- GitHub repository: alx-backend-storage
+- Directory: 0x00-MySQL_Advanced
+- File: 100-average_weighted_score.sql
+   
+## 13. Average weighted score for all!
+```
+Score: 100.0% (Checks completed: 100.0%)
+```
 Write a SQL script that creates a stored procedure ComputeAverageWeightedScoreForUsers that computes and store the average weighted score for all students.
 
-Requirements:
+### Requirements:
 
 Procedure ComputeAverageWeightedScoreForUsers is not taking any input.
-Tips:
+### Tips:
 
-Calculate-Weighted-Average
+- Calculate-Weighted-Average
+```
 bob@dylan:~$ cat 101-init.sql
 -- Initial
 DROP TABLE IF EXISTS corrections;
@@ -1066,8 +1091,10 @@ id  name    average_score
 1   Bob 90.6667
 2   Jeanne  79
 bob@dylan:~$ 
+```
 Repo:
 
-GitHub repository: alx-backend-storage
-Directory: 0x00-MySQL_Advanced
-File: 101-average_weighted_score.sql
+- GitHub repository: alx-backend-storage
+- Directory: 0x00-MySQL_Advanced
+- File: 101-average_weighted_score.sql
+   
