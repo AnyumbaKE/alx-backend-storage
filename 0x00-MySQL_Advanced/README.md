@@ -1,27 +1,32 @@
-0x00. MySQL advanced
-Back-end
-SQL
-MySQL
- Weight: 1
- Project over - took place from Apr 24, 2024 6:00 AM to Apr 26, 2024 6:00 AM
- An auto review will be launched at the deadline
-In a nutshell…
-Auto QA review: 53.0/53 mandatory & 8.0/8 optional
-Altogether:  200.0%
-Mandatory: 100.0%
-Optional: 100.0%
-Calculation:  100.0% + (100.0% * 100.0%)  == 200.0%
-Concepts
+# 0x00. MySQL advanced
+<table>
+<td>Back-end</td>
+<td>SQL</td>
+<td>MySQL</td>
+</table>
+<table>
+<tr>
+<td> Weight: 1</td>
+</tr>
+<tr>
+<td> Project over - took place from Apr 24, 2024 6:00 AM to Apr 26, 2024 6:00 AM</td>
+</tr>
+<tr>
+<td> An auto review will be launched at the deadline</td>
+ </tr>
+</table>
+
+## Concepts
 For this project, we expect you to look at this concept:
 
-Advanced SQL
-Resources
+- Advanced SQL
+## Resources
 Read or watch:
 
-MySQL cheatsheet
-MySQL Performance: How To Leverage MySQL Database Indexing
-Stored Procedure
-Triggers
+- MySQL cheatsheet
+- MySQL Performance: How To Leverage MySQL Database Indexing
+- Stored Procedure
+- Triggers
 Views
 Functions and Operators
 Trigger Syntax and Examples
