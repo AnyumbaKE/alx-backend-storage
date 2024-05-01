@@ -1,34 +1,39 @@
 #!/usr/bin/env python3
-'''A module with tools for request caching and tracking.
-'''
-import redis
-import requests
+
 from functools import wraps
+import redis
+from requests import get
 from typing import Callable
-import time
-from functools import lru_cache
 
 
-def track_access_count(func):
-    @lru_cache(maxsize=128)
+redis_client = redis.Redis()
+
+
+def responsed_cached_or_not(fn: Callable) -> Callable:
+    """
+    A simple decorator to cache a http request in redis
+    """
+    @wraps(fn)
     def wrapper(url):
-        # Track the number of times the URL was accessed
-        count_key = f"count:{url}"
-
-        # Increment the count for this URL
-        count = int(redis_client.get(count_key) or 0) + 1
-        redis_client.setex(count_key, 10, count)
-
-        # Call the original function
-        return func(url)
+        """
+        The wrapper function which gets returned
+        by the decorator
+        """
+        redis_client.incr(f"count:{url}")
+        cached_response = redis_client.get(f"cached:{url}")
+        if cached_response:
+            return cached_response.decode('utf-8')
+        result = fn(url)
+        redis_client.setex(f"cached:{url}", 10, result)
+        return result
 
     return wrapper
 
 
-@track_access_count
+@responsed_cached_or_not
 def get_page(url: str) -> str:
-    # Fetch the HTML content of the URL
-    response = requests.get(url)
-
-    # Return the HTML content
-    return response.text
+    """
+    A simple function to make http requests
+    to a certain endpoint
+    """
+    return get(url).text
